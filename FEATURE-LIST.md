@@ -1,484 +1,874 @@
-# ✅ CC MATRIMONY - COMPLETE FEATURE LIST 
+# ✅ CC MATRIMONY - FINALIZED FEATURE LIST
 
-**TOTAL: 139 Features**
+**TOTAL: 160 Features** (Organized by Implementation Phases)
 
----
-
-## 🔐 CATEGORY 1: AUTHENTICATION & USER MANAGEMENT
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 1 | **Email/Phone Registration** | Register with email and phone number | 2 | ⏳ |
-| 2 | **Email Verification** | Verify email via link (24hr expiry) | 2 | ⏳ |
-| 3 | **Phone OTP Verification** | Verify phone via 6-digit OTP (10min expiry) | 2 | ⏳ |
-| 4 | **Social Login - Google** | Sign up/login with Google account | 2 | ⏳ |
-| 5 | **Social Login - Facebook** | Sign up/login with Facebook account | 2 | ⏳ |
-| 6 | **Login System** | Login with email or phone + password, JWT auth | 3 | ⏳ |
-| 7 | **Password Reset** | Forgot password flow with email reset link | 3 | ⏳ |
-| 8 | **Email/Phone Verified Badges** | Display verified badges on profiles for trust | 3 | ⏳ |
+**Last Updated:** October 2025
+**Status:** Ready for Implementation
 
 ---
 
-## 👤 CATEGORY 2: PROFILE & ONBOARDING
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 9 | **Multi-step Onboarding Wizard** | 4-step guided profile creation | 4-5 | ⏳ |
-| 10 | **Age Validation** | Hard block: Male ≥21, Female ≥18 | 4 | ⏳ |
-| 11 | **Profile Created By** | Self, Parent, Sibling, Relative, Friend | 4 | ⏳ |
-| 12 | **Religion Selection** | Dropdown with Hindu, Christian, Muslim | 4 | ⏳ |
-| 13 | **Community Selection** | Cascading dropdown based on religion | 4 | ⏳ |
-| 14 | **Mother Tongue** | User's first language (Kannada, Tulu, etc.) | 4 | ⏳ |
-| 15 | **Location Fields** | City, State, Country | 4 | ⏳ |
-| 16 | **Willing to Relocate** | Yes/No for relocation preference | 4 | ⏳ |
-| 17 | **Family Details** | Father, mother, siblings info, family type/values | 4 | ⏳ |
-| 18 | **Lifestyle Fields** | Diet, smoking, drinking preferences | 4 | ⏳ |
-| 19 | **Education & Career** | Qualification, occupation, income (optional) | 4 | ⏳ |
-| 20 | **Physical Details** | Height, weight, complexion, blood group | 5 | ⏳ |
-| 21 | **Photo Upload** | Upload up to 5 photos with watermarking | 5 | ⏳ |
-| 22 | **Private Photos** | Password-protected photos, access control | 5 | ⏳ |
-| 23 | **Profile Completeness** | Real-time score (0-100%) with progress bar | 4-5 | ⏳ |
-| 24 | **Guided Profile Tips** | Contextual tips during profile creation | 4 | ⏳ |
-| 25 | **Horoscope Upload** | Upload horoscope (PDF/Image), optional | 5-6 | ⏳ |
-| 26 | **Rashi/Nakshatra Fields** | Birth star, moon sign, gothra | 5 | ⏳ |
-| 27 | **Horoscope Display** | Side-by-side horoscope view (no Guna scoring in Phase 1) | 6 | ⏳ |
-| 28 | **Auto Profile Reminders** | Email reminders for incomplete profiles | 11 | ⏳ |
-| 29 | **Profile Deactivation** | Temporarily hide profile (data retained) | 5 | ⏳ |
-| 30 | **Profile Last Updated** | Timestamp showing when profile was last edited | 5 | ⏳ |
-| 31 | **Profile Verification Badge** | Admin-verified profile badge for trust | 12 | ⏳ |
-| 32 | **Native Place/Hometown** | Birth place/ancestral home (different from current location) | 4 | ⏳ |
-| 33 | **Residency Status** | Citizen/Permanent Resident/Work Visa/Student Visa | 4 | ⏳ |
-| 34 | **Citizenship** | Country of citizenship, dual citizenship option | 4 | ⏳ |
-| 35 | **Caste/Sub-Caste** | Detailed caste information (optional) | 4 | ⏳ |
-| 36 | **Disability Status** | None/Physical/Visual/Hearing/Other (optional disclosure) | 4 | ⏳ |
-| 37 | **Manglik Status** | Yes/No/Don't know/Not applicable (for Hindu profiles) | 5 | ⏳ |
-
----
-
-## 🔍 CATEGORY 3: SEARCH & DISCOVERY
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 38 | **Basic Search** | Search with essential filters | 6 | ⏳ |
-| 39 | **Advanced Filters** | 25+ filters (age, height, education, horoscope, recently active) | 6 | ⏳ |
-| 40 | **Recently Active Filter** | Filter by last login (24h/7days/30days) | 6 | ⏳ |
-| 41 | **Location-Based Search** | Filter by city, state, "near me" | 6 | ⏳ |
-| 42 | **Keyword Search** | Search by name, city, occupation, bio | 6 | ⏳ |
-| 43 | **Search by Profile ID** | Direct lookup by profile ID | 6 | ⏳ |
-| 44 | **Pagination** | 20 profiles per page with navigation | 6 | ⏳ |
-| 45 | **Profile Cards** | Grid layout with photo, basic info | 6 | ⏳ |
-| 46 | **Recommended Matches** | AI-based compatibility matching | 7-8 | ⏳ |
-| 47 | **Recently Joined** | Newest profiles matching preferences | 7-8 | ⏳ |
-| 48 | **Compatibility Score** | Percentage match display | 7-8 | ⏳ |
-| 49 | **Shortlist/Favorites** | Save profiles to favorites list | 8 | ⏳ |
-| 50 | **Recently Viewed** | History of profiles you've viewed | 8 | ⏳ |
-| 51 | **Not Interested/Hide Profile** | Mark profiles as not interested, won't show again | 8 | ⏳ |
-| 52 | **Saved Searches** | Save filter combinations for quick rerun | 8 | ⏳ |
-| 53 | **Sort Options** | Relevance, Recent, Compatibility, Boosted | 6 | ⏳ |
-
----
-
-## 💌 CATEGORY 4: INTEREST SYSTEM
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 54 | **Send Interest** | Express interest with optional message | 7-8 | ⏳ |
-| 55 | **Receive Interest** | View incoming interest requests | 7-8 | ⏳ |
-| 56 | **Accept/Decline Interest** | Respond to interests with message | 7-8 | ⏳ |
-| 57 | **Mutual Match Alert** | Special "It's a Match!" notification when both users send interest | 8 | ⏳ |
-| 58 | **Interest Analytics** | Track sent, received, acceptance rate | 7-8 | ⏳ |
-| 59 | **Interest Send Limits** | Tiered limits: Free 5/day, Silver 10/day, Gold 30/day, Platinum 50/day | 7-8 | ⏳ |
-
----
-
-## 💎 CATEGORY 5: PREMIUM & MONETIZATION
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 60 | **FREE Early Bird Plan** | 1M plan: 10 contacts, 2/day limit (manual approval, first 100 users) | 9 | ⏳ |
-| 61 | **Silver Plan** | 3M @ ₹799: 50 contacts total, 5/day limit | 9-10 | ⏳ |
-| 62 | **Gold Plan** | 6M @ ₹1,499: 150 contacts total, 10/day limit | 9-10 | ⏳ |
-| 63 | **Platinum Plan** | 12M @ ₹2,499: 500 contacts total, 20/day limit | 9-10 | ⏳ |
-| 64 | **Promotional Code System** | Support %, fixed amount, free plan activation codes | 9-10 | ⏳ |
-| 65 | **Coupon Management (Admin)** | Create, configure, enable/disable coupons | 10 | ⏳ |
-| 66 | **Coupon Usage Tracking** | Track redemptions, usage stats, analytics | 10 | ⏳ |
-| 67 | **Auto-Apply Launch Discount** | 25% off all plans for first 7 days (LAUNCH25) | 9 | ⏳ |
-| 68 | **PhonePe Integration** | Payment gateway with UPI/Cards/Wallets | 9-10 | ⏳ |
-| 69 | **Payment Webhooks** | Handle success/failure callbacks | 9-10 | ⏳ |
-| 70 | **Profile Boost Add-on** | ₹500 for 7 days at top of search | 9-10 | ⏳ |
-| 71 | **Featured Listing** | Premium profiles highlighted | 9-10 | ⏳ |
-| 72 | **Premium Tier Badges** | Visual FREE/Silver/Gold/Platinum badges | 9-10 | ⏳ |
-| 73 | **Contact Limit Tracking** | Track total + daily contact view usage per user | 9-10 | ⏳ |
-
----
-
-## 💬 CATEGORY 6: COMMUNICATION
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 74 | **Real-time Chat** | WebSocket-powered instant messaging | 11 | ⏳ |
-| 75 | **Online/Last Seen Status** | Show online status & last active time | 11 | ⏳ |
-| 76 | **Typing Indicators** | "User is typing..." indicator | 11 | ⏳ |
-| 77 | **Read Receipts** | Message read status with checkmarks | 11 | ⏳ |
-| 78 | **Unread Count** | Badge showing unread messages | 11 | ⏳ |
-| 79 | **Photo Sharing** | Send images in chat conversations | 11 | ⏳ |
-| 80 | **File Attachments** | Share PDFs (horoscope, documents) | 11 | ⏳ |
-| 81 | **Chat Templates** | Pre-written conversation starters | 11 | ⏳ |
-| 82 | **Emoji Support** | Full emoji picker in chat | 11 | ⏳ |
-| 83 | **Chat History** | Load older messages with pagination | 11 | ⏳ |
-
----
-
-## 🔔 CATEGORY 7: NOTIFICATIONS & ALERTS
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 84 | **Email Notifications** | Resend integration for match alerts, interests, messages | 11 | ⏳ |
-| 85 | **SMS Alerts (OTP Only)** | MSG91 integration for OTP verification only | 2-3 | ⏳ |
-| 86 | **Match Alert System** | Daily/weekly email notifications for new matches | 11 | ⏳ |
-| 87 | **Profile Visit Alerts** | Email when someone views your profile (Premium only) | 12 | ⏳ |
-
----
-
-## 📊 CATEGORY 8: ANALYTICS & INSIGHTS
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 88 | **Profile Views Counter** | Track total profile views | 12 | ⏳ |
-| 89 | **Who Viewed My Profile** | See list of viewers (Premium feature) | 12 | ⏳ |
-| 90 | **Profile Performance Analytics** | Views trend, response rate, suggestions | 12 | ⏳ |
-| 91 | **Profile Activity Timeline** | Complete activity log (views, interests, messages history) | 12 | ⏳ |
-
----
-
-## ⚙️ CATEGORY 9: ADMIN DASHBOARD
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 92 | **Admin Authentication** | Separate secure admin login | 12 | ⏳ |
-| 93 | **User Search & Management** | Search users, view details, manage | 12 | ⏳ |
-| 94 | **Change User Status** | Activate, suspend, deactivate users | 12 | ⏳ |
-| 95 | **Manual Profile Verification** | Review and approve profiles for verification badge | 12 | ⏳ |
-| 96 | **Profile Rejection with Feedback** | Reject profiles with specific reasons (blurry photo, incomplete info, etc.) | 12 | ⏳ |
-| 97 | **Automated Moderation Queue** | Auto-approve with post-moderation review queue | 12 | ⏳ |
-| 98 | **Basic Profanity Filter** | Auto-filter bad words in bio/messages (bad-words library) | 12 | ⏳ |
-| 99 | **Profanity Filter Toggle** | Global ON/OFF switch for content filter | 12 | ⏳ |
-| 100 | **Per-Profile Filter Bypass** | Whitelist trusted profiles from auto-moderation | 12 | ⏳ |
-| 101 | **Religion Portal Management** | Create/edit religion portals | 13 | ⏳ |
-| 102 | **Community Portal Management** | Create/edit community portals | 13 | ⏳ |
-| 103 | **Success Stories CMS** | Manage success stories with images | 14 | ⏳ |
-| 104 | **User Reports & Moderation** | Review and action user reports | 14 | ⏳ |
-| 105 | **Admin Analytics Dashboard** | User stats, revenue, engagement, coupon metrics | 12 | ⏳ |
-
----
-
-## 🌐 CATEGORY 10: COMMUNITY PORTALS
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 106 | **Religion Portal Pages** | Dedicated pages for each religion (e.g., /hindu) | 15 | ⏳ |
-| 107 | **Community Landing Pages** | Nested portals (e.g., /hindu/bunt) | 15 | ⏳ |
-| 108 | **Profile Cross-listing** | Auto-display on relevant portals | 15 | ⏳ |
-| 109 | **SEO Optimization** | Meta tags, structured data, sitemaps | 15 | ⏳ |
-
----
-
-## 🛡️ CATEGORY 11: TRUST & SAFETY
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 110 | **Photo Watermarking** | Auto-watermark with CC Matrimony branding | 5 | ⏳ |
-| 111 | **Privacy Settings** | Profile visibility controls | 5 | ⏳ |
-| 112 | **Block Users** | Block unwanted users | 8 | ⏳ |
-| 113 | **Report Abuse** | Report suspicious profiles | 14 | ⏳ |
-| 114 | **Safety Tips Page** | Educational content on safe practices | 16 | ⏳ |
-| 115 | **Contact Info Privacy** | Hidden until mutual interest or premium | 11 | ⏳ |
-
----
-
-## 🔐 CATEGORY 12: PRIVACY & RECIPROCITY (GAME CHANGER!)
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 116 | **Photo Upload Requirement** | Hard lock: Cannot browse profiles without ≥1 photo uploaded | 5 | ⏳ |
-| 117 | **Field-Level Reciprocity Engine** | 10 fields locked until user fills their own (Income, Family, Horoscope, Education, Occupation, Physical, Lifestyle, Bio, Preferences, Photos) | 6 | ⏳ |
-| 118 | **3-Tier Privacy Controls** | Per-field: Public / Premium Only / Hidden (with request access) | 9-10 | ⏳ |
-| 119 | **Privacy Request System** | Request access to hidden fields, approve/deny with notifications | 10 | ⏳ |
-| 120 | **Access Management Dashboard** | View pending requests, approved access, revoke anytime, auto-approve settings | 10 | ⏳ |
-| 121 | **Request Limits & Tracking** | Free: 5 requests/day, Premium: unlimited, analytics on request patterns | 10 | ⏳ |
-
----
-
-## 🎁 CATEGORY 13: ADDITIONAL FEATURES
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 122 | **Profile PDF Export** | 3-page biodata with CCM branding, QR code, Matri ID | 8-9 | ⏳ |
-| 123 | **Profile JPG Export** | WhatsApp-shareable card (1080×1920px) with QR code | 8-9 | ⏳ |
-| 124 | **WhatsApp Integration** | Floating support button | 16 | ⏳ |
-| 125 | **Success Stories Display** | Public page showing couple stories | 14 | ⏳ |
-| 126 | **Contact Form** | Static contact us page | 16 | ⏳ |
-| 127 | **Legal Pages** | Terms of Service, Privacy Policy | 16 | ⏳ |
-
----
-
-## 🚀 CATEGORY 14: EXPERIENCE ENHANCEMENTS
-
-| # | Feature | Description | Week | Status |
-|---|---------|-------------|------|--------|
-| 128 | **Partner Preference Configuration** | Configure preferred age, height, education, income, community, lifestyle filters | 5 | ⏳ |
-| 129 | **Profile Completion Incentive System** | Gamified prompts and rewards to encourage profile completion | 5 | ⏳ |
-| 130 | **Profile Strength Analyzer** | Advanced scoring with personalized improvement tips | 5 | ⏳ |
-| 131 | **Profile Preview Mode** | View profile exactly as other users see it based on privacy settings | 5 | ⏳ |
-| 132 | **Unified Privacy Dashboard** | Central hub to manage field privacy, access requests, auto-approve rules | 10 | ⏳ |
-| 133 | **Daily Match Email Digest** | Curated daily/weekly email with top matches and engagement tips | 11 | ⏳ |
-| 134 | **Boost Renewal Reminder System** | Alerts when profile boost is expiring with one-click renewal | 10 | ⏳ |
-| 135 | **Common Background Highlighter** | Highlight shared hometown, college, community on profile cards | 8 | ⏳ |
-| 136 | **Profile Views Analytics Graph** | 30-day trend chart for profile views and engagement | 12 | ⏳ |
-| 137 | **Profile Highlight Package** | Lightweight highlight option separate from full boost | 10 | ⏳ |
-| 138 | **Dark Mode Toggle** | Switch between light/dark themes for better usability | 16 | ⏳ |
-| 139 | **User Analytics Dashboard** | Dashboard showing views, interests, match stats, conversion funnels | 12 | ⏳ |
-
-**GRAND TOTAL: 139 FEATURES** (Optimized for MVP Launch)
-
----
-
-## 🎯 FEATURE IMPLEMENTATION PRIORITY
-
-**Critical Path:** Infrastructure → Authentication → Profiles → Search → Interests → Premium & Chat → Admin → Portals → Testing & Launch
-
----
-
-## 📊 FEATURES BY USER TYPE
-
-**Free Users:** Registration, profile creation, search, interests, chat (after mutual interest), basic analytics
-
-**Premium Users:** Contact details, direct messaging, photo/file sharing, who viewed profile, featured listing, priority search
-
-**Admin:** User management, content management, moderation, analytics dashboard
-
----
-
-
-## ✅ MVP COMPLETION CHECKLIST
-
-**Before Launch:**
-- [ ] All 139 features implemented & tested
-- [ ] All integrations tested (PhonePe, Cloudinary, Resend, MSG91)
-- [ ] Cross-browser & mobile responsive tested
-- [ ] Performance: Lighthouse 90+
-- [ ] Legal pages, FAQ, email templates complete
-- [ ] Monitoring, backups, DNS, SSL configured
-- [ ] Payment gateway live mode enabled
-- [ ] WhatsApp support active
-
----
-
-## 🎯 POST-LAUNCH ROADMAP (Phase 2)
-
-**Weeks 23-30:**
-1. Advanced Compatibility Algorithm
-2. Advanced Horoscope Matching (Guna scoring)
-3. Real-time Match Scoring Engine (compatibility scoring service)
-4. AI-Powered Conversation Starters (contextual prompts in chat & interests)
-5. Email Digests (daily/weekly matches)
-6. Government ID Verification (upload ID, admin review, verified badge)
-7. Advanced Admin Features (bulk operations, analytics)
-8. Enhanced Privacy (screenshot protection, activity logs)
-
----
-
-## 📱 PHASE 3: MOBILE APPS (Month 8+)
-
-1. React Native Apps (iOS/Android, push notifications, biometric login)
-2. Voice/Video Calls (in-app calling, scheduling)
-3. Advanced Verification (ID, photo, income, education)
-
----
-
-
-## 💎 4-TIER PRICING STRATEGY
-
-| Tier | Price | Duration | Contacts | Daily Limit | Interest Limit |
-|------|-------|----------|----------|-------------|----------------|
-| **FREE Early Bird** | ₹0 | 1M | 10 | 2/day | 5/day |
-| **Silver** | ₹799 | 3M | 50 | 5/day | 10/day |
-| **Gold** | ₹1,499 | 6M | 150 | 10/day | 30/day |
-| **Platinum** | ₹2,499 | 12M | 500 | 20/day | 50/day |
-
-**FREE Early Bird:** First 100 users, manual admin approval, 80%+ profile completion required
-
----
-
-## 🎟️ PROMOTIONAL CODE SYSTEM
-
-**Coupon Types:**
-1. Percentage Discount (e.g., LAUNCH25 = 25% off)
-2. Fixed Amount Discount (e.g., SAVE200 = ₹200 off)
-3. Free Plan Activation (e.g., EARLYBIRD = 1-month free)
-4. Plan Upgrade (e.g., GOLDNOW = Gold at Silver price)
-
-**Features:** Expiry date, usage limits, one-time per user, plan restrictions, enable/disable toggle
-
-**Launch Coupons:**
-- EARLYBIRD: 100 users, manual approval, 90 days
-- LAUNCH25: 25% off, first 7 days, auto-applies
-- CCM100: ₹100 off (future marketing campaigns)
-- REFER50: ₹50 off (Phase 2 referral program)
-
-**Admin Dashboard:** Create/edit coupons, view analytics, track redemptions, revenue impact
-
----
-
-## 📤 PROFILE EXPORT SYSTEM
-
-**PDF Export (3-Page Biodata):**
-- Page 1: Cover with photo, name, Matri ID, QR code
-- Page 2: Personal details (basic info, education, family, lifestyle, horoscope)
-- Page 3: Partner preferences, photo gallery, contact instructions
-- Watermarked with CC Matrimony branding
-
-**JPG Export (WhatsApp Card):**
-- 1080×1920px Instagram-style card
-- Main photo, name, age, occupation, location, community
-- Matri ID prominent, QR code for profile link
-- < 500KB, optimized for WhatsApp sharing
-
-**Marketing Workflow:**
-- User exports profile → Shares in WhatsApp groups → Recipients scan QR → Register on platform → Viral growth
-
----
-
-## 🚫 FEATURES REMOVED FROM MVP (Moved to Phase 2)
-
-1. VIP Assisted Matchmaking ₹12,999/3M (labor-intensive)
-2. Video Profile Introduction (storage costs, moderation)
-3. Voice Introduction (better in mobile app)
-4. Horoscope Guna Matching Algorithm (Phase 1: side-by-side display only)
-
----
-
-## 📊 SUCCESS METRICS
-
-**Pre-Launch:** 100 Early Bird users, 80%+ profile completion, 50+ profiles with photos
-
-**Launch Week:** 200+ LAUNCH25 redemptions, 20%+ conversion, 50+ premium subscriptions, ₹40,000+ revenue
-
-**Month 1:** 500+ users, 100+ paid, ₹1,00,000+ revenue, 50+ profile exports
-
-**Month 3:** 2,000+ users, 400+ paid, ₹4,00,000+ revenue, 10+ success stories
-
----
-
-## 🔐 PRIVACY & RECIPROCITY SYSTEM
-
-**Problem:** 60-70% incomplete profiles, fake profiles, poor matching accuracy
-
-**Solution:** Fill your field → See others' fields (85%+ profile completion vs 30% industry average)
-
-### **3-Tier Privacy System**
-
-1. **PUBLIC:** Everyone sees your field, maximizes visibility
-2. **PREMIUM ONLY:** Only premium users see automatically, creates upgrade incentive
-3. **HIDDEN:** Request access required, you approve/deny, maximum privacy control
-
----
-
-### **Field-Level Reciprocity Rules**
-
-**10 Fields with Reciprocity Enforcement:**
-1. Photos (Hard Lock - must upload to browse)
-2. Income, Family Details, Horoscope, Education, Occupation
-3. Physical Details, Lifestyle, About Me/Bio, Partner Preferences
-
-**Privacy Options:** Public / Premium Only / Hidden
-
-**Always Visible:** Age, Religion, Community, Mother Tongue, Location, Marital Status, Profile Created By
-
----
-
-### **Hard Lock (Photo Requirement)**
-
-**Rule:** Cannot browse profiles without uploading ≥1 photo
-- Prevents fake profiles, ensures fair exchange, industry standard
-
-### **Soft Lock (Field-Level Reciprocity)**
-
-**Rule:** Fill your field → See others' fields
-- Locked fields show "🔒 Fill your [field] to unlock"
-- Unlocked fields display full information
-
-### **Hidden with Request Access**
-
-**Rule:** You filled it + chose "Hidden" → You can see others' fields, but others must request access
-- User who hid field can see all other users' fields
-- Others see "🔒 Hidden by User - Request Access" button
-
----
-
-### **Privacy Request System Workflow**
-
-1. **User B Sends Request:** Clicks "Request Access", sends optional message
-2. **User A Receives Notification:** Email + in-app notification with requester details
-3. **User A Reviews & Approves:** Privacy Requests Dashboard shows pending requests with profile info
-4. **Access Granted:** User B gets notification, can now view field, User A can revoke anytime
-
----
-
-### **Auto-Approve Settings**
-
-**Automatically approve requests from:**
-- Premium Users
-- Verified Profiles
-- Mutual Interest
-- Same Community
-- Profiles I Viewed
-- Profile Completeness ≥80%
-
-### **Access Management Dashboard**
-
-View all approved access by field, revoke access anytime
-
----
-
-### **Request Limits**
-
-| Feature | Free Users | Premium Users |
-|---------|------------|---------------|
-| Send Requests | 5/day | Unlimited |
-| Auto-Approve Options | Basic (2) | All (6) |
-| Badge on Request | None | "💎 Premium User" |
-
-### **Special Cases**
-
-- **Horoscope for Non-Hindus:** Select "Not applicable" → Unlocks viewing
-- **Unemployed/No Income:** Select "Not earning currently" → Unlocks viewing
-- **Onboarding Wizard:** Guides users to complete profile step-by-step, each step unlocks more profiles
-
-### **Benefits**
-
-- 85%+ profile completion (vs 30% industry average)
-- Eliminates fake profiles, fair information exchange
-- User control with privacy settings
-- Premium incentive (auto-approve, unlimited requests)
-- Better matching with complete data
-- Unique competitive advantage
-
----
-
-## 📋 EXECUTIVE SUMMARY
-
-**Total Features:** 139
-
-**Pricing:** FREE Early Bird (100 users), Silver ₹799/3M, Gold ₹1,499/6M, Platinum ₹2,499/12M
+## 📊 EXECUTIVE SUMMARY
+
+**Pricing:** FREE Early Bird (manual approval), Silver ₹799/3M, Gold ₹1,499/6M, Platinum ₹2,499/12M, VIP Assisted ₹12,999/3M
+
+**Technology Stack:** 
+- Frontend: Next.js 14 (App Router), TailwindCSS, TypeScript
+- Backend: NestJS, PostgreSQL 16, Prisma ORM, Redis 7
+- Storage: Cloudflare R2 + CDN
+- Payments: PhonePe (primary), Razorpay (backup), Offline payments
+- Email: Resend (3K emails/month free)
+- SMS: Fast2SMS
+- Chat: Custom Socket.io + Redis
+- Analytics: Google Analytics 4, Facebook Pixel
+
+**Development Approach:** Phase-based (no week assignments)
 
 **Launch Strategy:**
-- Week 1-2: Manual onboarding, 100 Early Bird users
-- Week 22: Launch with LAUNCH25 (25% off, 7 days), Target ₹40,000+ revenue
-- Month 1-3: Viral growth via PDF/JPG exports, Target 2,000+ users, ₹4,00,000 revenue
-
-**Technology Stack:** Next.js (Frontend), NestJS (Backend), PostgreSQL + Prisma ORM, PhonePe, Cloudinary, Resend (email), MSG91 (SMS/OTP), Vercel (hosting)
-
-**Implementation:** 22 weeks (Infrastructure → Auth → Profiles → Search → Interests → Premium/Chat → Admin → Portals → Launch)
+- Phase 1 → Beta launch (50 Early Bird users)
+- Phase 1 Complete → Public launch with LAUNCH25 promotion
+- Phase 2-4 → Based on user feedback and demand
 
 ---
+
+## 🎯 PHASE DISTRIBUTION
+
+| Phase | Features | Focus | Status |
+|-------|----------|-------|--------|
+| **Phase 1** | 73 | MVP Launch - Core Revenue Platform | 🔄 Pending |
+| **Phase 2** | 42 | Enhancement & Analytics | 🔄 Pending |
+| **Phase 3** | 28 | Growth & Community Expansion | 🔄 Pending |
+| **Phase 4** | 17 | Advanced Features & Maturity | 🔄 Pending |
+| **Excluded** | - | Mobile-only features (Phase 5+) | - |
+
+---
+
+# 🚀 PHASE 1: MVP LAUNCH (73 Features)
+
+**Goal:** Fully functional matrimony platform with revenue generation capabilities
+
+**Critical Path:** Infrastructure → Auth → Profile → Search → Interest → Premium → Chat → Admin → Launch
+
+---
+
+## 🔐 P1.1: AUTHENTICATION & USER MANAGEMENT (11 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 1 | **Email/Phone Registration** | Register with email and phone number | P0 |
+| 2 | **Email Verification** | Verify email via link (24hr expiry) | P0 |
+| 3 | **Email Verification Resend** | Resend verification email if expired/not received | P0 |
+| 4 | **Phone OTP Verification** | Verify phone via 6-digit OTP (10min expiry) via Fast2SMS | P0 |
+| 5 | **Social Login - Google** | Sign up/login with Google account | P1 |
+| 6 | **Social Login - Facebook** | Sign up/login with Facebook account | P1 |
+| 7 | **Login System** | Login with email or phone + password, JWT auth | P0 |
+| 8 | **Password Reset** | Forgot password flow with email reset link | P0 |
+| 9 | **Password Strength Meter** | Real-time password validation during registration | P1 |
+| 10 | **Email/Phone Verified Badges** | Display verified badges on profiles for trust | P1 |
+| 11 | **Profile Uniqueness Check** | Prevent duplicate accounts (same email/phone) | P0 |
+
+---
+
+## 👤 P1.2: PROFILE & ONBOARDING (25 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 12 | **Multi-step Onboarding Wizard** | 4-step guided profile creation flow | P0 |
+| 13 | **Age Validation** | Hard block: Male ≥21, Female ≥18 | P0 |
+| 14 | **Profile Created By** | Self, Parent, Sibling, Relative, Friend | P0 |
+| 15 | **Religion Selection** | Dropdown: Hindu, Christian, Muslim (expandable via admin) | P0 |
+| 16 | **Community Selection** | Cascading dropdown based on religion | P0 |
+| 17 | **Mother Tongue** | User's first language (Kannada, Tulu, Konkani, etc.) | P0 |
+| 18 | **Location Fields** | City, State, Country with autocomplete | P0 |
+| 19 | **Native Place/Hometown** | Birth place/ancestral home (different from current location) | P0 |
+| 20 | **Residency Status** | Citizen/Permanent Resident/Work Visa/Student Visa | P0 |
+| 21 | **Citizenship** | Country of citizenship, dual citizenship option | P0 |
+| 22 | **Willing to Relocate** | Yes/No/Maybe for relocation preference | P0 |
+| 23 | **Caste/Sub-Caste** | Detailed caste information (optional, privacy controlled) | P0 |
+| 24 | **Manglik Status** | Yes/No/Don't know/Not applicable (for Hindu profiles) | P0 |
+| 25 | **Family Details** | Father, mother, siblings info, family type/values | P0 |
+| 26 | **Lifestyle Fields** | Diet, smoking, drinking preferences | P0 |
+| 27 | **Education & Career** | Qualification, occupation, income (optional) | P0 |
+| 28 | **Physical Details** | Height, weight, complexion, blood group | P0 |
+| 29 | **Disability Status** | None/Physical/Visual/Hearing/Other (optional disclosure) | P0 |
+| 30 | **About Me / Bio** | Free text description (500 chars, profanity filtered) | P0 |
+| 31 | **Bulk Photo Upload** | Upload up to 5 photos at once (drag-drop interface) | P0 |
+| 32 | **Photo Upload Requirement** | Hard lock: Cannot browse profiles without ≥1 photo | P0 |
+| 33 | **Photo Watermarking** | Auto-watermark with CC Matrimony branding | P0 |
+| 34 | **Horoscope Upload** | Upload horoscope (PDF/Image), optional | P1 |
+| 35 | **Rashi/Nakshatra Fields** | Birth star, moon sign, gothra (for Hindu profiles) | P1 |
+| 36 | **Horoscope Display** | Side-by-side horoscope view (no Guna scoring in Phase 1) | P1 |
+| 37 | **Profile Completeness** | Real-time score (0-100%) with progress bar | P0 |
+| 38 | **Guided Profile Tips** | Contextual tips during profile creation | P1 |
+| 39 | **Profile Last Updated** | Timestamp showing when profile was last edited | P1 |
+| 40 | **Profile Deactivation** | Temporarily hide profile (data retained, reactivate anytime) | P1 |
+| 41 | **Partner Preference Configuration** | Configure preferred age, height, education, income, community, lifestyle | P0 |
+| 42 | **Profile Strength Analyzer** | Advanced scoring with personalized improvement tips | P1 |
+| 43 | **Profile Preview Mode** | View profile exactly as other users see it (respects privacy settings) | P1 |
+
+---
+
+## 🔐 P1.3: PRIVACY & RECIPROCITY SYSTEM (6 Features)
+
+**UNIQUE SELLING POINT - Implement carefully!**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 44 | **Field-Level Reciprocity Engine** | 10 fields locked until user fills their own (Photos, Income, Family, Horoscope, Education, Occupation, Physical, Lifestyle, Bio, Preferences) | P0 |
+| 45 | **Reciprocity Enforcement Toggle (Admin)** | Admin can switch between Strict/Lenient/Gradual/Disabled modes | P0 |
+| 46 | **Privacy Settings** | Per-field visibility controls (Public/Premium Only/Hidden) | P0 |
+| 47 | **3-Tier Privacy Controls** | Public (everyone) / Premium Only (auto-show to premium) / Hidden (request access) | P0 |
+| 48 | **Contact Info Privacy** | Phone/Email hidden until premium user views (quota system) | P0 |
+| 49 | **Private Photos** | Password-protected photos, access request system | P1 |
+
+---
+
+## 🔍 P1.4: SEARCH & DISCOVERY (14 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 50 | **Basic Search** | Search with essential filters (age, religion, community, location) | P0 |
+| 51 | **Advanced Filters** | 25+ filters (height, education, occupation, income, marital status, manglik, horoscope, recently active, has photo, verified only) | P0 |
+| 52 | **URL Parameter Search** | SEO-friendly URLs: /search?gender=female&age=25-30&religion=hindu | P0 |
+| 53 | **Recently Active Filter** | Filter by last login (24h/7days/30days) | P0 |
+| 54 | **Location-Based Search** | Filter by city, state, country | P0 |
+| 55 | **Keyword Search** | Search by name, city, occupation, bio keywords | P1 |
+| 56 | **Search by Profile ID** | Direct lookup by profile ID (CCM001234) | P0 |
+| 57 | **Pagination** | 20 profiles per page with navigation | P0 |
+| 58 | **Profile Cards** | Grid layout with photo, basic info, badges | P0 |
+| 59 | **Sort Options** | Relevance, Recent, Profile Completeness, Recently Active | P0 |
+| 60 | **Recently Joined** | Newest profiles matching preferences | P1 |
+| 61 | **Shortlist/Favorites** | Save profiles to favorites list (unlimited) | P0 |
+| 62 | **Recently Viewed** | History of profiles you've viewed (last 50) | P1 |
+| 63 | **Not Interested/Hide Profile** | Mark profiles as not interested, won't show in search again | P1 |
+
+---
+
+## 💌 P1.5: INTEREST SYSTEM (7 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 64 | **Send Interest** | Express interest with optional personalized message (200 chars) | P0 |
+| 65 | **Interest Withdraw** | Withdraw sent interest before acceptance (with notification) | P0 |
+| 66 | **Receive Interest** | View incoming interest requests with sender's profile | P0 |
+| 67 | **Accept/Decline Interest** | Respond to interests with optional message | P0 |
+| 68 | **Mutual Match Alert** | Special "It's a Match!" notification when both users express interest | P0 |
+| 69 | **Interest Send Limits** | Tiered quotas: Free 5/day, Silver 10/day, Gold 30/day, Platinum 50/day | P0 |
+| 70 | **Interest Expiry** | Interests expire after 30 days if no response (auto-archived) | P1 |
+
+---
+
+## 💎 P1.6: PREMIUM & MONETIZATION (12 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 71 | **FREE Early Bird Plan** | Manual admin approval, 5 interests/day, no contact viewing, no chat | P0 |
+| 72 | **Silver Plan** | ₹799/3M: 50 contacts, 5/day limit, 10 interests/day, chat enabled | P0 |
+| 73 | **Gold Plan** | ₹1,499/6M: 150 contacts, 10/day limit, 30 interests/day, chat + priority support | P0 |
+| 74 | **Platinum Plan** | ₹2,499/12M: 500 contacts, 20/day limit, 50 interests/day, all premium features | P0 |
+| 75 | **VIP Assisted Matchmaking** | ₹12,999/3M: Dedicated matchmaker + Platinum plan benefits | P0 |
+| 76 | **Premium Tier Badges** | Visual FREE/Silver/Gold/Platinum/VIP badges on profiles | P0 |
+| 77 | **Contact Viewing System** | One-time permanent unlock per profile (consumes quota) | P0 |
+| 78 | **Contact Limit Tracking** | Track total + daily contact view usage per user (dashboard) | P0 |
+| 79 | **PhonePe Integration** | Primary payment gateway: UPI/Cards/Wallets | P0 |
+| 80 | **Razorpay Integration** | Backup payment gateway for international/cards | P0 |
+| 81 | **Offline Payment System** | Bank transfer/cash payment → Admin approval → Manual activation | P0 |
+| 82 | **Payment Webhooks** | Handle success/failure/refund callbacks, auto-activate premium | P0 |
+| 83 | **Promotional Code System** | Support %, fixed amount, free plan activation codes | P0 |
+| 84 | **Auto-Apply Launch Discount** | LAUNCH25: 25% off all plans (first 7 days, auto-applies at checkout) | P0 |
+
+---
+
+## 💬 P1.7: COMMUNICATION (5 Features)
+
+**Premium-only feature**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 85 | **Real-time Chat** | WebSocket-powered instant messaging (Socket.io + Redis) | P0 |
+| 86 | **Online/Last Seen Status** | Show online status & last active time | P0 |
+| 87 | **Unread Count** | Badge showing unread messages (real-time) | P0 |
+| 88 | **Chat History** | Load older messages with infinite scroll | P0 |
+| 89 | **Chat Access Control** | Premium-only: Can message anyone, Free users: Blocked | P0 |
+
+---
+
+## 🔔 P1.8: NOTIFICATIONS & ALERTS (3 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 90 | **Email Notifications** | Resend integration: Interest received, accepted, new messages, premium expiry | P0 |
+| 91 | **Email Template System** | Reusable email templates with variables (name, profile ID, etc.) | P0 |
+| 92 | **SMS Alerts (OTP Only)** | Fast2SMS integration for OTP verification only (no promotional SMS) | P0 |
+
+---
+
+## 🛡️ P1.9: TRUST & SAFETY (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 93 | **Block Users** | Block unwanted users (can't see profile, send interest, or chat) | P0 |
+| 94 | **Report Abuse** | Report suspicious profiles with category (fake, harassment, inappropriate photo) | P0 |
+| 95 | **Basic Profanity Filter** | Auto-filter bad words in bio/messages (bad-words library) | P0 |
+| 96 | **Safety Tips Page** | Educational content on safe practices (static page) | P1 |
+| 97 | **Legal Pages** | Terms of Service, Privacy Policy, Refund Policy (static pages) | P0 |
+
+---
+
+## ⚙️ P1.10: ADMIN DASHBOARD (16 Features)
+
+**Comprehensive admin panel for operations & telecallers**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 98 | **Admin Authentication** | Separate secure admin login (role-based: Super Admin, Admin, Telecaller) | P0 |
+| 99 | **Admin Dashboard Home** | Overview: Total users, premium users, revenue (today/week/month), recent signups | P0 |
+| 100 | **User Quick Search** | Search by phone/email/name/profile ID with instant results | P0 |
+| 101 | **User Management** | View user profile, activity, subscriptions, interests, chat logs | P0 |
+| 102 | **Change User Status** | Activate, Suspend, Deactivate, Mark as VIP, Mark as Verified | P0 |
+| 103 | **Internal Notes System** | Admin/telecaller notes on users (private, timestamped, user cannot see) | P0 |
+| 104 | **Call Logs System** | Log telecaller calls: Outcome (Answered/No answer/Callback), Notes, Next follow-up date | P0 |
+| 105 | **Manual Premium Activation** | Activate premium plan for offline payments (select plan, duration, reason) | P0 |
+| 106 | **Payment Verification Queue** | Approve/reject offline payment requests with proof upload | P0 |
+| 107 | **Manual Profile Verification** | Review and approve profiles for verification badge (blue checkmark) | P1 |
+| 108 | **Profile Rejection with Feedback** | Reject profiles with reasons (blurry photo, incomplete info, fake) | P1 |
+| 109 | **Automated Moderation Queue** | Auto-approve with post-moderation review queue (flagged profiles) | P1 |
+| 110 | **Profanity Filter Toggle** | Global ON/OFF switch for content filter + Custom word blacklist | P1 |
+| 111 | **User Activity Timeline** | Complete activity log (views, interests, messages, logins) | P0 |
+| 112 | **Coupon Management** | Create, edit, enable/disable coupons with usage limits | P0 |
+| 113 | **Coupon Usage Tracking** | Track redemptions, revenue impact, user-wise usage | P0 |
+| 114 | **Admin Analytics Dashboard** | Charts: Signups trend, revenue trend, premium conversion rate, active users (DAU/MAU) | P0 |
+| 115 | **User Impersonation** | Login as user for debugging (with audit log, emergency only) | P1 |
+| 116 | **Export User Data** | Export user data as JSON/CSV (GDPR compliance) | P1 |
+
+---
+
+## 🌐 P1.11: COMMUNITY PORTALS (DYNAMIC) (4 Features)
+
+**Admin-driven, no hardcoding**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 117 | **Religion Portal Management** | Admin: Create/edit religions (name, slug, description, SEO meta tags) | P0 |
+| 118 | **Community Portal Management** | Admin: Create/edit communities under religions (cascading) | P0 |
+| 119 | **Religion Portal Pages** | Dynamic pages: /hindu, /christian, /muslim (shows communities list) | P0 |
+| 120 | **Community Landing Pages** | Dynamic pages: /hindu/bunt, /christian/mangalorean (filtered profiles + SEO) | P0 |
+
+**Launch with:** 3 religions × 5 communities = 15 portals (expandable via admin panel)
+
+---
+
+## 🎯 P1.12: VIP ASSISTED MATCHMAKING (6 Features)
+
+**Dedicated feature set for VIP users + Admin/Matchmaker**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 121 | **VIP User Dashboard** | View assigned matchmaker, preferences questionnaire, recommendations inbox | P0 |
+| 122 | **VIP Preferences Questionnaire** | Detailed form: Dealbreakers, priorities, lifestyle expectations (admin views) | P0 |
+| 123 | **Matchmaker Assignment (Admin)** | Admin assigns VIP clients to specific telecaller/matchmaker | P0 |
+| 124 | **Matchmaker Dashboard** | View assigned VIP clients, search database, send recommendations | P0 |
+| 125 | **Send Manual Recommendations** | Matchmaker sends profile recommendations to VIP with personalized notes | P0 |
+| 126 | **VIP-Matchmaker Chat** | Direct messaging between VIP user and matchmaker (separate from platform chat) | P0 |
+
+---
+
+## 📊 P1.13: ANALYTICS & TRACKING (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 127 | **Google Analytics 4** | Track: Page views, signups, premium conversions, search queries | P0 |
+| 128 | **Facebook Pixel** | Track: Purchase (premium signup), Lead (registration) for ads | P0 |
+| 129 | **Profile Views Counter** | Track how many times profile was viewed (total count) | P0 |
+| 130 | **Interest Analytics** | User dashboard: Interests sent, received, acceptance rate | P1 |
+| 131 | **Health Check Endpoint** | /api/health for monitoring uptime (returns server status) | P0 |
+
+---
+
+## 🔧 P1.14: INFRASTRUCTURE & TECHNICAL (8 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 132 | **API Rate Limiting** | 100 requests/min per user, 1000/min per IP (prevent abuse) | P0 |
+| 133 | **Database Seeding** | Sample data for testing (50 fake profiles, admin user) | P0 |
+| 134 | **Sitemap Generation** | Auto-generate XML sitemap for SEO (profiles, portals, static pages) | P0 |
+| 135 | **Robots.txt Management** | Configure crawler access (allow/disallow routes) | P0 |
+| 136 | **Error Logging** | Sentry integration for error tracking and alerts | P0 |
+| 137 | **Graceful Shutdown** | Handle ongoing requests during deployment (zero downtime) | P1 |
+| 138 | **Contact Form** | Static contact us page (name, email, message → sends to admin email) | P1 |
+| 139 | **WhatsApp Integration** | Floating WhatsApp support button (links to business number) | P1 |
+
+---
+
+## 📋 P1.15: USER EXPERIENCE (4 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 140 | **Profile Completion Incentive** | Gamified prompts: "Complete education → Unlock 250+ profiles" | P1 |
+| 141 | **Saved Searches** | Save filter combinations with custom names (max 10 saved searches) | P1 |
+| 142 | **Auto Profile Reminders** | Email reminders for incomplete profiles (Day 3, Day 7, Day 14) | P1 |
+| 143 | **Common Background Highlighter** | Highlight shared hometown, college, occupation on profile cards | P1 |
+
+---
+
+# 📈 PHASE 2: ENHANCEMENT & ANALYTICS (42 Features)
+
+**Goal:** Improve engagement, retention, and user insights
+
+**Implement after Phase 1 launch, based on user feedback**
+
+---
+
+## 📊 P2.1: ADVANCED ANALYTICS & INSIGHTS (10 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 144 | **Who Viewed My Profile** | See list of viewers with timestamps (Premium feature) | P1 |
+| 145 | **Profile Visit Alerts** | Email when someone views your profile (Premium only, opt-in) | P1 |
+| 146 | **Profile Performance Analytics** | Views trend, response rate, profile strength suggestions | P1 |
+| 147 | **Profile Views Analytics Graph** | 30-day trend chart for profile views and engagement | P1 |
+| 148 | **User Analytics Dashboard** | Dashboard: Views, interests, match stats, conversion funnels | P1 |
+| 149 | **Admin Advanced Analytics** | Detailed reports: User engagement funnel, churn analysis, cohort analysis | P1 |
+| 150 | **Revenue Analytics** | Revenue by plan, daily/monthly recurring revenue (MRR), churn rate | P1 |
+| 151 | **Telecaller Performance Metrics** | Calls made, conversions, follow-up rate, leaderboard | P1 |
+| 152 | **Match Success Tracking** | Track mutual interests → chat → success story (measure platform effectiveness) | P2 |
+| 153 | **A/B Testing Framework** | Test different UI/UX variations (pricing page, search filters) | P2 |
+
+---
+
+## 💬 P2.2: ENHANCED COMMUNICATION (6 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 154 | **Typing Indicators** | "User is typing..." indicator in real-time | P1 |
+| 155 | **Read Receipts** | Message read status with checkmarks (sent/delivered/read) | P1 |
+| 156 | **Photo Sharing in Chat** | Send images in chat conversations (max 5MB, watermarked) | P1 |
+| 157 | **File Attachments** | Share PDFs (horoscope, biodata) in chat (max 10MB) | P1 |
+| 158 | **Chat Templates** | Pre-written conversation starters (admin configurable) | P2 |
+| 159 | **Emoji Support** | Full emoji picker in chat with recent emojis | P2 |
+
+---
+
+## 🔐 P2.3: ADVANCED PRIVACY & ACCESS CONTROL (4 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 160 | **Privacy Request System** | Request access to hidden fields, approve/deny with notifications | P1 |
+| 161 | **Access Management Dashboard** | View pending requests, approved access, revoke anytime, auto-approve settings | P1 |
+| 162 | **Request Limits & Tracking** | Free: 5 requests/day, Premium: unlimited, analytics on request patterns | P1 |
+| 163 | **Unified Privacy Dashboard** | Central hub to manage all field privacy, access requests, auto-approve rules | P1 |
+
+---
+
+## 📤 P2.4: PROFILE EXPORT & SHARING (2 Features)
+
+**Viral growth feature**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 164 | **Profile PDF Export** | 3-page biodata with CCM branding, photos, QR code, Matri ID (generates server-side) | P1 |
+| 165 | **Profile JPG Export** | WhatsApp-shareable card (1080×1920px) with QR code, <500KB optimized | P1 |
+
+---
+
+## 🎁 P2.5: SUCCESS STORIES & CONTENT (3 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 166 | **Success Stories CMS (Admin)** | Manage success stories: Upload couple photos, story text, wedding date | P1 |
+| 167 | **Success Stories Display** | Public page showing couple stories (with permission, testimonials) | P1 |
+| 168 | **Success Story Submission** | Users can submit their success story via form (admin approval required) | P2 |
+
+---
+
+## 💎 P2.6: PREMIUM ENHANCEMENTS (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 169 | **Profile Boost Add-on** | ₹500 for 7 days at top of search results (highlighted with flame icon) | P1 |
+| 170 | **Featured Listing** | Premium profiles highlighted in search with colored border | P1 |
+| 171 | **Boost Renewal Reminder** | Alerts when profile boost is expiring with one-click renewal | P2 |
+| 172 | **Profile Highlight Package** | Lightweight highlight option (₹200 for 3 days, no top placement) | P2 |
+| 173 | **Premium Expiry Reminders** | Email alerts 7 days, 3 days, 1 day before premium expires | P1 |
+
+---
+
+## ⚙️ P2.7: ADVANCED ADMIN FEATURES (8 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 174 | **Bulk Operations** | Bulk email, bulk status change, bulk coupon assignment | P1 |
+| 175 | **Email Broadcast System** | Send announcements to all users/premium users/specific segment | P1 |
+| 176 | **Lead Assignment System** | Assign new signups to telecallers (round-robin or manual) | P1 |
+| 177 | **Follow-up Reminders** | Auto-reminders for telecallers (pending follow-ups dashboard) | P1 |
+| 178 | **Call Queue Management** | Organized call queue with priority levels (Hot/Warm/Cold) | P1 |
+| 179 | **User Status Tags** | Custom tags: Hot Lead, Warm, Cold, Converted, Not Interested, Callback Needed | P1 |
+| 180 | **Telecaller Dashboard** | Personal dashboard: Today's calls, pending follow-ups, conversion rate | P1 |
+| 181 | **Per-Profile Filter Bypass** | Whitelist trusted profiles from auto-moderation (admin override) | P2 |
+
+---
+
+## 🔔 P2.8: ENHANCED NOTIFICATIONS (4 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 182 | **Match Alert System** | Daily/weekly email: New profiles matching preferences | P1 |
+| 183 | **Daily Match Email Digest** | Curated daily/weekly email with top 5 matches and engagement tips | P1 |
+| 184 | **In-app Notifications** | Bell icon with notifications dropdown (interests, messages, views) | P1 |
+| 185 | **Notification Preferences** | User can toggle email notifications (interests, matches, messages) | P1 |
+
+---
+
+# 🌍 PHASE 3: GROWTH & COMMUNITY (28 Features)
+
+**Goal:** Scale platform, SEO optimization, community building
+
+**Implement after 500+ active users**
+
+---
+
+## 🌐 P3.1: COMMUNITY EXPANSION (4 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 186 | **Profile Cross-listing** | Auto-display profiles on relevant portals (user selects communities) | P2 |
+| 187 | **SEO Optimization** | Advanced meta tags, structured data (Schema.org), social share previews | P2 |
+| 188 | **Community-Specific Pages** | Custom content per community: History, traditions, matrimony customs | P2 |
+| 189 | **Regional Language Support** | UI translation for Kannada, Hindi (optional, based on demand) | P3 |
+
+---
+
+## 🤖 P3.2: AI & RECOMMENDATIONS (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 190 | **Recommended Matches** | AI-based compatibility matching algorithm (20+ parameters) | P1 |
+| 191 | **Compatibility Score** | Percentage match display based on preferences alignment | P1 |
+| 192 | **Smart Profile Suggestions** | "You may also like" section on profile pages | P2 |
+| 193 | **Auto-Match Notifications** | Daily email: "5 new profiles matching your preferences" | P2 |
+| 194 | **Preference Learning** | System learns from user behavior (viewed, shortlisted, interests) | P3 |
+
+---
+
+## 🎯 P3.3: ENGAGEMENT FEATURES (8 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 195 | **Profile Badge System** | Achievement badges: Early adopter, Profile champion, Chatty, Verified member | P2 |
+| 196 | **Profile Completeness Leaderboard** | Show top 10 most complete profiles (gamification) | P2 |
+| 197 | **Daily Login Streak** | Track consecutive login days with rewards (free boost after 7 days) | P2 |
+| 198 | **Referral Program** | Refer a friend: Both get ₹100 off premium (Phase 3 focus) | P2 |
+| 199 | **Testimonials Section** | User testimonials on homepage (admin approved) | P2 |
+| 200 | **Blog/Articles Section** | SEO-driven blog: Marriage tips, community spotlights, dating advice | P2 |
+| 201 | **FAQ Page** | Comprehensive FAQ with search functionality | P2 |
+| 202 | **Video Testimonials** | Embed YouTube testimonials on homepage/success stories page | P3 |
+
+---
+
+## 📱 P3.4: MOBILE OPTIMIZATION (5 Features)
+
+**Progressive Web App (PWA) features**
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 203 | **PWA Support** | Install app on mobile home screen, offline support | P2 |
+| 204 | **Mobile-Optimized UI** | Bottom navigation, swipe gestures, touch-friendly | P2 |
+| 205 | **Image Lazy Loading** | Load images on scroll for faster mobile performance | P2 |
+| 206 | **WebP Image Format** | Convert all images to WebP for 30% smaller file size | P2 |
+| 207 | **Responsive Tables** | Mobile-friendly tables for profile details | P2 |
+
+---
+
+## 🔍 P3.5: ADVANCED SEARCH (6 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 208 | **Search History** | View past searches with one-click re-run | P2 |
+| 209 | **Search Alerts** | Email alerts when new profiles match saved search criteria | P2 |
+| 210 | **Elasticsearch Integration** | Ultra-fast search with typo tolerance, synonyms | P2 |
+| 211 | **Proximity Search** | "Near me" search with radius (10km, 50km, 100km) | P3 |
+| 212 | **Boolean Search** | Advanced operators: AND, OR, NOT (for power users) | P3 |
+| 213 | **Search Suggestions** | Auto-suggest locations, occupations, educations as user types | P2 |
+
+---
+
+# 🚀 PHASE 4: ADVANCED FEATURES (17 Features)
+
+**Goal:** Platform maturity, differentiation, advanced capabilities
+
+**Implement after 2000+ users, based on demand**
+
+---
+
+## 🔬 P4.1: ADVANCED HOROSCOPE MATCHING (4 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 214 | **Horoscope Guna Matching** | Automated Ashtakoot Guna scoring (36-point system for Hindu matches) | P2 |
+| 215 | **Horoscope Compatibility Report** | Detailed PDF report: Guna score, Dosha analysis, recommendations | P2 |
+| 216 | **Mangal Dosha Calculator** | Auto-detect Manglik status from horoscope chart (if uploaded) | P3 |
+| 217 | **Astrologer Consultation** | Premium feature: Book consultation with partner astrologer | P3 |
+
+---
+
+## 🛡️ P4.2: ADVANCED VERIFICATION (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 218 | **Government ID Verification** | Upload ID (Aadhaar/PAN/Passport), admin review, verified badge | P2 |
+| 219 | **Photo Verification** | Real-time selfie verification (match with profile photos) | P2 |
+| 220 | **Income Verification** | Upload salary slip/ITR, admin review, income verified badge | P3 |
+| 221 | **Education Verification** | Upload degree certificate, admin review, education verified badge | P3 |
+| 222 | **Background Check Integration** | Partner with background check services (premium add-on) | P3 |
+
+---
+
+## 🎨 P4.3: UX ENHANCEMENTS (5 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 223 | **Dark Mode Toggle** | Switch between light/dark themes (user preference saved) | P2 |
+| 224 | **Custom Theme Colors** | Admin can customize brand colors (primary, secondary, accent) | P3 |
+| 225 | **Accessibility Features** | Screen reader support, keyboard navigation, ARIA labels | P2 |
+| 226 | **Multi-language Support** | Full UI translation system (Kannada, Hindi, Tamil, Telugu) | P3 |
+| 227 | **Onboarding Tutorial** | Interactive first-time user guide (product tour) | P2 |
+
+---
+
+## 📊 P4.4: ADVANCED ANALYTICS (3 Features)
+
+| # | Feature | Description | Priority |
+|---|---------|-------------|----------|
+| 228 | **Heatmap Analytics** | Click heatmaps, scroll depth tracking (Hotjar/Microsoft Clarity) | P3 |
+| 229 | **User Session Recording** | Record user sessions for UX debugging (privacy compliant) | P3 |
+| 230 | **Predictive Analytics** | Predict churn risk, conversion probability (ML model) | P3 |
+
+---
+
+# 🚫 EXCLUDED FEATURES (Phase 5+)
+
+**These features require mobile app or are not MVP-critical**
+
+| # | Feature | Reason for Exclusion |
+|---|---------|----------------------|
+| 231 | **Push Notifications** | Requires native mobile app |
+| 232 | **Voice/Video Calls** | High infrastructure cost, better in mobile app |
+| 233 | **Video Profile Introduction** | High storage cost, moderation complexity |
+| 234 | **Voice Introduction** | Better UX in mobile app |
+| 235 | **Biometric Login** | Requires native mobile app |
+| 236 | **In-app Camera** | Requires native mobile app |
+| 237 | **Offline Mode (Full)** | Requires native mobile app with local storage |
+| 238 | **Screenshot Protection** | Not possible in web browsers |
+| 239 | **Advanced ML Recommendations** | Requires large dataset (2000+ users) |
+| 240 | **Live Chat with Astrologer** | Resource-intensive, complex integration |
+
+---
+
+# 📊 PRICING STRATEGY (Finalized)
+
+| Tier | Price | Duration | Contacts | Daily Limit | Interest Limit | Chat | VIP Matchmaking |
+|------|-------|----------|----------|-------------|----------------|------|-----------------|
+| **FREE Early Bird** | ₹0 | Manual | 0 | 0/day | 5/day | ❌ | ❌ |
+| **Silver** | ₹799 | 3M | 50 | 5/day | 10/day | ✅ | ❌ |
+| **Gold** | ₹1,499 | 6M | 150 | 10/day | 30/day | ✅ | ❌ |
+| **Platinum** | ₹2,499 | 12M | 500 | 20/day | 50/day | ✅ | ❌ |
+| **VIP Assisted** | ₹12,999 | 3M | 500 | 20/day | 50/day | ✅ | ✅ Dedicated Matchmaker |
+
+**Contact Viewing:** One-time permanent unlock per profile (consumes quota)
+
+**Free Users:**
+- ❌ Cannot view contact details (phone/email)
+- ❌ Cannot chat (even after mutual interest)
+- ✅ Can search, send interests, receive interests, shortlist profiles
+
+**Premium Users (Silver/Gold/Platinum/VIP):**
+- ✅ View contact details (quota-based)
+- ✅ Chat with anyone (no mutual interest needed)
+- ✅ See who viewed their profile
+- ✅ Priority customer support
+
+---
+
+# 🎟️ PROMOTIONAL SYSTEM
+
+**Coupon Types:**
+1. **Percentage Discount:** LAUNCH25 = 25% off (first 7 days)
+2. **Fixed Amount:** SAVE200 = ₹200 off
+3. **Free Trial:** TRYSILVER = 7-day Silver trial
+4. **Plan Upgrade:** GOLDNOW = Gold at Silver price
+
+**Admin Features:**
+- Create/edit/disable coupons
+- Set expiry date, usage limit (total + per user)
+- Plan restrictions (specific plans only)
+- Track redemptions, revenue impact
+
+---
+
+# 🚀 IMPLEMENTATION STRATEGY
+
+## **Development Sequence (Phase 1)**
+
+```
+GROUP 1: Foundation (Parallel)
+  ├── Infrastructure setup (Docker, PostgreSQL, Redis, Cloudflare R2)
+  ├── Database schema design (all tables, relations)
+  ├── Authentication system (JWT, social login, OTP)
+  └── Admin panel foundation (layout, routing, auth)
+
+GROUP 2: Core Profile System
+  ├── Profile creation wizard (all fields)
+  ├── Photo upload + watermarking
+  ├── Reciprocity engine (field locking logic)
+  ├── Privacy controls (3-tier system)
+  └── Profile completeness calculator
+
+GROUP 3: Search & Discovery
+  ├── Search system (25+ filters)
+  ├── URL parameter search
+  ├── Profile cards + pagination
+  ├── Shortlist/Recently viewed
+  └── Hide/Block functionality
+
+GROUP 4: Interest System
+  ├── Send/Receive/Accept/Decline interests
+  ├── Interest quotas (tiered limits)
+  ├── Mutual match detection
+  └── Interest expiry
+
+GROUP 5: Premium & Payment
+  ├── Pricing plans setup
+  ├── PhonePe + Razorpay integration
+  ├── Payment webhooks + auto-activation
+  ├── Contact viewing system (quota tracking)
+  ├── Offline payment approval
+  └── Coupon system
+
+GROUP 6: Communication
+  ├── Socket.io + Redis setup
+  ├── Real-time chat (text only)
+  ├── Online/Last seen status
+  ├── Unread count
+  └── Premium access control
+
+GROUP 7: Admin Dashboard
+  ├── User search + management
+  ├── Status changes + notes
+  ├── Call logs system
+  ├── Payment verification queue
+  ├── Coupon management
+  ├── Analytics dashboard
+  └── VIP matchmaking features
+
+GROUP 8: Polish & Launch Prep
+  ├── Email templates (Resend)
+  ├── Google Analytics + Facebook Pixel
+  ├── Legal pages + Safety tips
+  ├── Community portals (15 portals)
+  ├── SEO (sitemap, robots.txt)
+  ├── Testing (functional, security, performance)
+  └── Deployment + SSL
+
+```
+
+**Parallel vs Sequential:**
+- Groups 1-3 can be developed in parallel (different modules)
+- Groups 4-7 must be sequential (dependencies)
+- GROUP 8 can start once GROUP 7 is 70% complete
+
+---
+
+# 📋 PRE-LAUNCH CHECKLIST
+
+**Before Beta Launch (Phase 1):**
+- [ ] All 143 Phase 1 features implemented
+- [ ] Database seeded with 50 sample profiles
+- [ ] Admin panel fully functional
+- [ ] Payment gateways tested (sandbox mode)
+- [ ] Email/SMS working (test sends)
+- [ ] Security audit completed
+- [ ] Performance: Lighthouse 90+ score
+- [ ] Mobile responsive (tested on 5 devices)
+- [ ] Legal pages published
+- [ ] Google Analytics + Facebook Pixel active
+- [ ] SSL certificate installed
+- [ ] Backup system configured
+- [ ] Error monitoring active (Sentry)
+- [ ] 20 beta users invited for testing
+
+**Before Public Launch:**
+- [ ] Beta testing feedback incorporated
+- [ ] Payment gateways in live mode
+- [ ] LAUNCH25 coupon configured
+- [ ] WhatsApp support number active
+- [ ] Social media pages created
+- [ ] Email marketing sequences ready
+- [ ] FAQs published
+- [ ] Support documentation complete
+- [ ] Load testing completed (500 concurrent users)
+- [ ] Rollback plan documented
+
+---
+
+# 📊 SUCCESS METRICS
+
+**Phase 1 Launch (Month 1):**
+- 50 Beta users (Early Bird)
+- 80%+ profile completion rate
+- 40+ profiles with photos
+- 10+ premium conversions
+- ₹10,000+ revenue
+
+**Phase 1 Complete (Month 2-3):**
+- 500+ total users
+- 100+ premium users (20% conversion)
+- ₹1,00,000+ revenue
+- 200+ mutual interests
+- 50+ success stories (potential)
+
+**Phase 2 Complete (Month 4-6):**
+- 2,000+ users
+- 400+ premium users
+- ₹4,00,000+ revenue
+- 10+ verified success stories
+- 50+ profile exports/day
+
+**Phase 3 Complete (Month 7-12):**
+- 5,000+ users
+- 1,000+ premium users
+- ₹10,00,000+ revenue
+- 50+ success stories published
+- Profitable with positive cash flow
+
+---
+
+# 🔐 PRIVACY & RECIPROCITY ENFORCEMENT MODES
+
+**Admin can toggle between 4 modes:**
+
+## **1. STRICT MODE (Recommended for Launch)**
+- All 10 fields locked until user fills theirs
+- Photo upload mandatory to browse
+- 85%+ profile completion expected
+- Best for quality profiles
+
+## **2. LENIENT MODE**
+- Only 5 critical fields locked (Photos, Income, Education, Family, About Me)
+- Can browse with any photo
+- 60%+ profile completion expected
+- Good for user acquisition phase
+
+## **3. GRADUAL MODE (Dynamic)**
+- Week 1-2: Lenient (5 fields)
+- Week 3-4: Medium (7 fields)
+- Week 5+: Strict (10 fields)
+- Automatically adjusts over time
+- Best for onboarding + quality balance
+
+## **4. DISABLED (Not Recommended)**
+- No reciprocity enforcement
+- Open access to all fields
+- Use only for testing/debugging
+
+**Recommendation:** Launch with **STRICT MODE**, switch to **GRADUAL** if user feedback suggests friction.
+
+---
+
+# 🎯 CONTACT VIEWING VS INTEREST SYSTEM
+
+## **Clarification (Based on Research)**
+
+### **Interest System (Free + Premium)**
+- **What:** Express romantic interest in a profile
+- **Action:** "Send Interest" button → Optional message (200 chars)
+- **Quota:** Free 5/day, Silver 10/day, Gold 30/day, Platinum 50/day
+- **Cost:** Free action (doesn't consume contact quota)
+- **Purpose:** Initial signal of interest, icebreaker
+- **Visibility:** Both users notified if mutual interest
+
+### **Contact Viewing (Premium Only)**
+- **What:** View phone number & email address
+- **Action:** "View Contact" button (premium only)
+- **Quota:** Silver 50 total, Gold 150 total, Platinum 500 total
+- **Cost:** Consumes 1 contact from total quota
+- **One-time:** Once viewed, permanently unlocked (doesn't consume again)
+- **Purpose:** Direct communication outside platform
+
+### **Workflow Example:**
+
+```
+FREE USER:
+  1. Search profiles → View 50 profiles (reciprocity enforced)
+  2. Send 5 interests/day → Receive interest acceptance
+  3. 🚫 Contact details blocked → "Upgrade to view contact"
+  4. 🚫 Chat blocked → "Upgrade to chat"
+
+PREMIUM USER (Gold):
+  1. Search profiles → View unlimited profiles
+  2. Send 30 interests/day
+  3. OR skip interest → "View Contact" (consumes 1/150 quota)
+  4. OR chat directly (no interest needed)
+  5. Contact viewed → Phone/Email unlocked permanently
+  6. Can track: "135/150 contacts remaining"
+```
+
+---
+
+# 💻 TECHNOLOGY STACK (Finalized)
+
+## **Frontend**
+- **Framework:** Next.js 14 (App Router, React Server Components)
+- **Language:** TypeScript
+- **Styling:** TailwindCSS + Shadcn UI components
+- **State:** Zustand (lightweight) + React Context
+- **Forms:** React Hook Form + Zod validation
+- **Charts:** Recharts (admin analytics)
+- **Icons:** Lucide React
+
+## **Backend**
+- **Framework:** NestJS (modular architecture)
+- **Language:** TypeScript
+- **Database:** PostgreSQL 16
+- **ORM:** Prisma (type-safe, migrations)
+- **Cache:** Redis 7 (sessions, rate limiting, chat)
+- **Realtime:** Socket.io (chat, online status)
+- **Queue:** Bull (background jobs: emails, notifications)
+
+## **Storage & CDN**
+- **Images:** Cloudflare R2 (S3-compatible, cheaper)
+- **CDN:** Cloudflare (free tier, global)
+- **Watermarking:** Sharp (server-side image processing)
+
+## **Third-Party Services**
+- **Email:** Resend (3K/month free)
+- **SMS:** Fast2SMS
+- **Payment:** PhonePe, Razorpay
+- **Analytics:** Google Analytics 4, Facebook Pixel
+- **Monitoring:** Sentry (error tracking)
+- **Hosting:** Vercel (frontend), DigitalOcean (backend)
+
+## **DevOps**
+- **Containers:** Docker + Docker Compose
+- **CI/CD:** GitHub Actions
+- **Database Backups:** Automated daily backups
+- **Secrets:** Environment variables (.env)
+- **SSL:** Let's Encrypt (auto-renewal)
+
+---
+
+# 📞 SUPPORT & QUESTIONS
+
+**This document is ready for implementation!**
+
+**Next Steps:**
+1. ✅ You approve this finalized feature list
+2. ✅ I create TECHNICAL-SPEC.md (database schema, API endpoints, architecture)
+3. ✅ I create IMPLEMENTATION-PLAN.md (detailed implementation order)
+4. ✅ You set up infrastructure (VM, Docker, domain)
+5. ✅ I start building Phase 1!
+
+**Questions or Changes?**
+- Any features you want to move between phases?
+- Any features you want to add/remove?
+- Any clarifications needed?
+
+**I'm ready to start coding once you give the green light!** 🚀
