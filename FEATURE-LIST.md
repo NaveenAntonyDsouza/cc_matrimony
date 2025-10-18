@@ -650,18 +650,23 @@
 
 **These features were removed during finalization (dating-app vibes, complexity, or not suitable for matrimony)**
 
-| # | Feature | Reason for Exclusion |
-|---|---------|----------------------|
-| 231 | **Push Notifications** | Requires native mobile app |
-| 232 | **Voice/Video Calls** | High infrastructure cost, better in mobile app |
-| 233 | **Video Profile Introduction** | High storage cost, moderation complexity |
-| 234 | **Voice Introduction** | Better UX in mobile app |
-| 235 | **Biometric Login** | Requires native mobile app |
-| 236 | **In-app Camera** | Requires native mobile app |
-| 237 | **Offline Mode (Full)** | Requires native mobile app with local storage |
-| 238 | **Screenshot Protection** | Not possible in web browsers |
-| 239 | **Advanced ML Recommendations** | Requires large dataset (2000+ users) |
-| 240 | **Live Chat with Astrologer** | Resource-intensive, complex integration |
+| # | Feature | Reason for Exclusion | Phase |
+|---|---------|----------------------|-------|
+| EX-1 | **Chat Templates** | Impersonal, matrimony needs authentic conversations | Removed from P2 |
+| EX-2 | **Emoji Support in Chat** | Too casual for matrimony platform | Removed from P2 |
+| EX-3 | **Success Story Submission by Users** | Spam risk, admin-managed only is sufficient | Removed from P2 |
+| EX-4 | **Profile Highlight Package** | Too many boost options confuses users, one boost enough | Removed from P2 |
+| EX-5 | **Per-Profile Filter Bypass** | Edge case, not needed | Removed from P2 |
+| EX-6 | **Regional Language Support** | Complex, not MVP-critical | Removed from P3 |
+| EX-7 | **Profile Badge System** | Dating app vibe (achievements, gamification) | Removed from P3 |
+| EX-8 | **Profile Completeness Leaderboard** | Gamification not suitable for matrimony | Removed from P3 |
+| EX-9 | **Daily Login Streak** | Creates FOMO, not matrimony-appropriate | Removed from P3 |
+| EX-10 | **Video Testimonials** | Resource-intensive, regular testimonials enough | Removed from P3 |
+| EX-11 | **Proximity Search "Near Me"** | Privacy concerns, location tracking | Removed from P3 |
+| EX-12 | **Astrologer Consultation** | Partnership complexity, out of scope | Removed from P4 |
+| EX-13 | **Background Check Integration** | Expensive, privacy concerns, complex partnerships | Removed from P4 |
+
+**Note:** Features related to mobile apps (push notifications, biometric login, etc.) were moved to **Phase 5**, not excluded!
 
 ---
 
@@ -675,18 +680,36 @@
 | **Platinum** | ₹2,499 | 12M | 500 | 20/day | 50/day | ✅ | ❌ |
 | **VIP Assisted** | ₹12,999 | 3M | 500 | 20/day | 50/day | ✅ | ✅ Dedicated Matchmaker |
 
-**Contact Viewing:** One-time permanent unlock per profile (consumes quota)
+**Contact Viewing:** One-time permanent unlock per profile (respects user's privacy settings)
 
 **Free Users:**
-- ❌ Cannot view contact details (phone/email)
+- ❌ Cannot view contact details (phone/email) - even if user made them visible
 - ❌ Cannot chat (even after mutual interest)
 - ✅ Can search, send interests, receive interests, shortlist profiles
+- ✅ Can set their own contact/photo privacy preferences
 
 **Premium Users (Silver/Gold/Platinum/VIP):**
-- ✅ View contact details (quota-based)
+- ✅ View contact details (quota-based, respects user privacy settings)
 - ✅ Chat with anyone (no mutual interest needed)
 - ✅ See who viewed their profile
 - ✅ Priority customer support
+- ✅ Can see photos based on user's photo privacy settings
+
+**USER-CONTROLLED PRIVACY (Game Changer!):**
+
+**Contact Privacy Options (User Chooses):**
+- Show to all premium users (default)
+- Show to premium users who I accepted interest from
+- Show to premium users who sent me interest
+- Show only after mutual interest
+- Hidden from everyone (ultra-private, chat only)
+
+**Photo Privacy Options (User Chooses):**
+- Visible to everyone (maximum visibility)
+- Visible to premium users only
+- Visible to users who sent me interest
+- Visible after I accept their interest
+- Hidden (request access required)
 
 ---
 
@@ -877,7 +900,7 @@ GROUP 8: Polish & Launch Prep
 
 # 🎯 CONTACT VIEWING VS INTEREST SYSTEM
 
-## **Clarification (Based on Research)**
+## **Clarification (Based on Research + User Privacy Controls)**
 
 ### **Interest System (Free + Premium)**
 - **What:** Express romantic interest in a profile
@@ -887,15 +910,19 @@ GROUP 8: Polish & Launch Prep
 - **Purpose:** Initial signal of interest, icebreaker
 - **Visibility:** Both users notified if mutual interest
 
-### **Contact Viewing (Premium Only)**
+### **Contact Viewing (Premium Only + Privacy Controlled)**
 - **What:** View phone number & email address
 - **Action:** "View Contact" button (premium only)
 - **Quota:** Silver 50 total, Gold 150 total, Platinum 500 total
 - **Cost:** Consumes 1 contact from total quota
 - **One-time:** Once viewed, permanently unlocked (doesn't consume again)
 - **Purpose:** Direct communication outside platform
+- **🔐 NEW: User Privacy Control:** Contact shown ONLY if user's privacy settings allow
+  - If user set "Show to all premium" → Contact revealed immediately
+  - If user set "Show after accepted interest" → Contact revealed only if user accepted your interest
+  - If user set "Hidden" → Contact not shown (chat only)
 
-### **Workflow Example:**
+### **Workflow Example (With Privacy Controls):**
 
 ```
 FREE USER:
@@ -903,14 +930,25 @@ FREE USER:
   2. Send 5 interests/day → Receive interest acceptance
   3. 🚫 Contact details blocked → "Upgrade to view contact"
   4. 🚫 Chat blocked → "Upgrade to chat"
+  5. ✅ Can set own privacy: Photos visible to premium only, Contact after mutual interest
 
 PREMIUM USER (Gold):
   1. Search profiles → View unlimited profiles
-  2. Send 30 interests/day
-  3. OR skip interest → "View Contact" (consumes 1/150 quota)
-  4. OR chat directly (no interest needed)
-  5. Contact viewed → Phone/Email unlocked permanently
+  2. See photos IF user allows (based on their photo privacy setting)
+  3. Send 30 interests/day
+  4. Click "View Contact" → System checks:
+     - User's contact privacy: "Show to all premium" → ✅ Revealed (1/150 consumed)
+     - User's contact privacy: "Show after accepted interest" → ❌ "Send interest first"
+     - User's contact privacy: "Hidden" → ❌ "User prefers chat only"
+  5. OR chat directly (no interest needed, if user allows)
   6. Can track: "135/150 contacts remaining"
+
+PRIVACY-CONSCIOUS USER (Any Plan):
+  1. Sets Photo Privacy: "Premium only" → Free users see placeholder
+  2. Sets Contact Privacy: "Show after mutual interest" → Controls who sees contact
+  3. Gets interest → Reviews profile → Accepts
+  4. Premium user can NOW view contact (privacy rule met)
+  5. User maintains control, premium user uses quota
 ```
 
 ---
@@ -957,15 +995,119 @@ PREMIUM USER (Gold):
 
 ---
 
+# 🎯 FINAL SUMMARY
+
+## **What We Built**
+
+**245 Total Features** organized across 5 phases:
+- ✅ **Phase 1:** 159 features (MVP - Complete platform)
+- ✅ **Phase 2:** 42 features (Analytics & Enhancements)
+- ✅ **Phase 3:** 20 features (Growth & SEO)
+- ✅ **Phase 4:** 13 features (Advanced features)
+- ✅ **Phase 5:** 11 features (Native mobile apps)
+- ❌ **Excluded:** 13 features (dating-app features removed)
+
+**Deliverable: 232 active features** (245 - 13 excluded)
+
+---
+
+## **🚀 Game-Changing Features**
+
+### **1. User-Controlled Privacy (Industry First!)**
+- Users choose who sees their contact details (all premium / accepted interests / mutual / hidden)
+- Users choose who sees their photos (everyone / premium / sent interest / accepted / request)
+- Better than masked+OTP approach - gives users full control
+
+### **2. Remarriage Support (20-30% of market)**
+- Marital Status field (Never Married / Divorced / Widowed)
+- Children Status (No / Have children living/not living with me)
+- Dedicated filters for remarriage profiles
+
+### **3. Admin Power Tools**
+- Field Visibility Toggle (enable/disable any field globally)
+- Photo Privacy Mode Switch (Simple vs Advanced)
+- Reciprocity Enforcement Modes (Strict / Lenient / Gradual / Disabled)
+- Platform adapts without code changes
+
+### **4. VIP Assisted Matchmaking**
+- Dedicated matchmaker + Platinum plan access
+- Manual recommendations, personalized service
+- ₹12,999/3M premium offering
+
+### **5. BharatMatrimony Multi-Domain Model**
+- Single codebase, single database
+- Supports separate domains (buntmatrimony.com, etc.)
+- Domain-based auto-filtering
+- Phase 3 feature - scale to 20-30 domains
+
+---
+
+## **📊 Key Improvements from Initial Plan**
+
+**Added 19 critical features:**
+- Marital Status & Children Status (remarriage)
+- User-controlled contact & photo privacy
+- Family Status, Values, Type
+- Body Type, Spectacles, Employed In
+- Income Ranges (not exact)
+- Profile ID generation (CCM001234)
+- Admin field/photo privacy toggles
+- Shortlist with notes
+- Email notification preferences
+- Per-photo privacy control (Phase 2)
+- FAQ page (moved to Phase 2)
+- Onboarding tutorial (moved to Phase 2)
+- Want children (Phase 2)
+- Mutual matches filter
+- Recently viewed me
+
+**Removed 13 features:**
+- Dating-app features (badges, leaderboards, streaks, emojis)
+- Complex partnerships (astrologer, background check)
+- Unnecessary features (proximity search, video testimonials)
+
+**Moved mobile features to Phase 5:**
+- Native apps AFTER web platform proves business model
+- 11 mobile-specific features (push notifications, biometric, video calls)
+
+---
+
+## **💡 Implementation Highlights**
+
+**Technology Stack:**
+- Frontend: Next.js 14 + TypeScript + TailwindCSS
+- Backend: NestJS + PostgreSQL + Prisma + Redis
+- Storage: Cloudflare R2 (cheaper than Cloudinary)
+- Email: Resend (3K/month free)
+- SMS: Fast2SMS
+- Payment: PhonePe + Razorpay + Offline
+- Chat: Custom Socket.io (not third-party)
+
+**Development Approach:**
+- Local development (Docker on Windows)
+- Phase-based (no week assignments)
+- Parallel work where possible
+- Testing before each phase completion
+
+**Timeline Estimate:**
+- Phase 1: 4-6 months (159 features)
+- Phase 2: 2-3 months (42 features)
+- Phase 3: 2-3 months (20 features)
+- Phase 4: 1-2 months (13 features)
+- Phase 5: 3-4 months (11 mobile features)
+- **Total: 12-18 months for complete platform**
+
+---
+
 # 📞 SUPPORT & QUESTIONS
 
-**This document is ready for implementation!**
+**✅ This document is FINALIZED and ready for implementation!**
 
 **Next Steps:**
 1. ✅ You approve this finalized feature list
-2. ✅ I create TECHNICAL-SPEC.md (database schema, API endpoints, architecture)
-3. ✅ I create IMPLEMENTATION-PLAN.md (detailed implementation order)
-4. ✅ You set up infrastructure (VM, Docker, domain)
+2. ✅ You set up Docker environment (I'll provide setup guide)
+3. ✅ I create TECHNICAL-SPEC.md (database schema, API endpoints, architecture)
+4. ✅ I create IMPLEMENTATION-PLAN.md (detailed implementation order)
 5. ✅ I start building Phase 1!
 
 **Questions or Changes?**
@@ -973,4 +1115,25 @@ PREMIUM USER (Gold):
 - Any features you want to add/remove?
 - Any clarifications needed?
 
-**I'm ready to start coding once you give the green light!** 🚀
+**I'm ready to start building once you set up Docker!** 🚀
+
+---
+
+## **📋 PRE-IMPLEMENTATION CHECKLIST**
+
+**Before I start coding, you need to set up:**
+- [ ] Docker Desktop installed on Windows
+- [ ] Git repository created (GitHub/GitLab)
+- [ ] Domain confirmed: matri.naveevo.com
+- [ ] Fast2SMS API credentials
+- [ ] PhonePe test merchant credentials (or I can use sandbox initially)
+- [ ] SSL certificate (or we set up Let's Encrypt together)
+
+**I will provide:**
+- [ ] Complete Docker setup guide
+- [ ] Database schema design
+- [ ] API documentation
+- [ ] Implementation roadmap
+- [ ] Phase 1 detailed task breakdown
+
+**Once infrastructure is ready, development begins!** 💻
