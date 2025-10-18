@@ -14,52 +14,63 @@
 **Technology Stack:** 
 - Frontend: Next.js 14 (App Router), TailwindCSS, TypeScript
 - Backend: NestJS, PostgreSQL 16, Prisma ORM, Redis 7
+- Hosting: Railway (Backend + Database), Vercel (Frontend), Cloudflare CDN
 - Storage: Cloudflare R2 + CDN
-- Payments: PhonePe (primary), Razorpay (backup), Offline payments
-- Email: Resend (3K emails/month free)
-- SMS: Fast2SMS
+- Payments: PhonePe, Razorpay, Paytm, Cashfree (Admin selectable)
+- Email: AWS SES (primary), Resend (backup)
+- SMS: Fast2SMS, Twilio, MSG91 (Admin selectable with fallback)
 - Chat: Custom Socket.io + Redis
 - Analytics: Google Analytics 4, Facebook Pixel
 
-**Development Approach:** Phase-based (no week assignments)
+**Development Approach:** Phase-based with 3 sub-phases in Phase 1
+
+**Timeline:** 12 months to complete Phases 1-3 (MVP to growth)
 
 **Launch Strategy:**
-- Phase 1 → Beta launch (50 Early Bird users)
-- Phase 1 Complete → Public launch with LAUNCH25 promotion
-- Phase 2-4 → Based on user feedback and demand
+- Phase 1A (Months 1-2) → Beta launch (50 Early Bird users)
+- Phase 1B (Months 3-4) → Public launch with LAUNCH25 promotion
+- Phase 1C (Months 5-7) → Polish & VIP services
+- Phase 2-5 → Based on user feedback and demand
 
 ---
 
 ## 🎯 PHASE DISTRIBUTION
 
-| Phase | Features | Focus | Status |
-|-------|----------|-------|--------|
-| **Phase 1** | 159 | MVP Launch - Core Revenue Platform | 🔄 Pending |
-| **Phase 2** | 42 | Enhancement & Analytics | 🔄 Pending |
-| **Phase 3** | 20 | Growth & Community Expansion | 🔄 Pending |
-| **Phase 4** | 13 | Advanced Features & Maturity | 🔄 Pending |
-| **Phase 5** | 11 | Native Mobile Apps (iOS + Android) | 🔄 Pending |
-| **Excluded** | 13 | Removed/Dating-app features | - |
+| Phase | Features | Focus | Timeline | Status |
+|-------|----------|-------|----------|--------|
+| **Phase 1A** | 55 | True MVP - Beta Launch | Months 1-2 | 🔄 Pending |
+| **Phase 1B** | 60 | Monetization - Public Launch | Months 3-4 | 🔄 Pending |
+| **Phase 1C** | 50 | Polish & VIP Services | Months 5-7 | 🔄 Pending |
+| **Phase 2** | 42 | Enhancement & Analytics | Months 8-10 | 🔄 Pending |
+| **Phase 3** | 20 | Growth & Community Expansion | Months 11-14 | 🔄 Pending |
+| **Phase 4** | 13 | Advanced Features & Maturity | Months 15-18 | 🔄 Pending |
+| **Phase 5** | 11 | Native Mobile Apps (iOS + Android) | Months 19-24 | 🔄 Pending |
+| **Excluded** | 13 | Removed/Dating-app features | - | - |
 
-**GRAND TOTAL:** 245 features (232 active + 13 excluded)
+**GRAND TOTAL:** 251 features (238 active + 13 excluded)
+
+**Phase 1 Split Rationale:** Based on research recommendations, original Phase 1 was too large (159 features, 6+ months). Split into manageable sub-phases for faster feedback and iteration.
 
 ---
 
-# 🚀 PHASE 1: MVP LAUNCH (159 Features)
+# 🚀 PHASE 1A: TRUE MVP - BETA LAUNCH (55 Features)
 
-**Goal:** Fully functional matrimony platform with revenue generation capabilities
+**Goal:** Core matchmaking functionality for beta testing with 50 users
 
-**Critical Path:** Infrastructure → Auth → Profile → Search → Interest → Premium → Chat → Admin → Launch
+**Timeline:** Months 1-2
 
-**NEW ADDITIONS (After Final Research):**
-- ✅ Marital Status & Remarriage Support (critical for 20-30% of users)
-- ✅ User-Controlled Contact Privacy (show to all premium / accepted interests / hidden)
-- ✅ User-Controlled Photo Privacy (show to everyone / premium only / request access)
-- ✅ Family Status, Values, Type (Indian matrimony essentials)
-- ✅ Body Type, Spectacles, Employed In (filtering preferences)
-- ✅ Income Ranges (not exact - more practical)
-- ✅ Admin Field Visibility Controls (enable/disable fields globally)
-- ✅ Admin Photo Privacy Mode Toggle (simple vs advanced modes)
+**Critical Path:** Infrastructure → Auth → Basic Profile → Basic Search → Interest → One Premium Plan → Basic Admin → Beta Launch
+
+**Focus:** Validate core concept, gather user feedback, test infrastructure
+
+**NEW ADDITIONS (After Final Research + User Answers):**
+- ✅ Railway hosting for cost-effective infrastructure
+- ✅ Multi-SMS provider support (Fast2SMS, Twilio, MSG91) with admin toggle
+- ✅ Multi-payment gateway support (PhonePe, Razorpay, Paytm, Cashfree)
+- ✅ Admin-configurable free tier limits (interests per day)
+- ✅ Trust Score system (profile authenticity indicator)
+- ✅ Profile view limits for free users
+- ✅ Enhanced WhatsApp integration for viral growth
 
 ---
 
@@ -247,7 +258,7 @@
 
 ---
 
-## ⚙️ P1.10: ADMIN DASHBOARD (16 Features)
+## ⚙️ P1.10: ADMIN DASHBOARD (22 Features)
 
 **Comprehensive admin panel for operations & telecallers**
 
